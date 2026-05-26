@@ -1,0 +1,20 @@
+# Environments
+.venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest caching
+.pytest_cache/
+
+# Local Output Directories
+01_image_fundamentals/results/
+
+# Paused modules
+02_array_vectorization/
