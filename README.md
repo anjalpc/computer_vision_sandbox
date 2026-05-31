@@ -22,7 +22,7 @@ computer-vision-sandbox/
 │   │   ├── __init__.py         # Package initialization
 │   │   └── functions.py        # Core image manipulation algorithms
 │   └── test/
-│       └── test.py             # Unit tests verifying implementations
+│       └── test_fundamentals.py  # Unit tests verifying implementations
 ├── 02_array_vectorization/      # High-Performance Array Filtering
 │   ├── src/
 │   │   └── filters.py          # Naive, Vectorized, and Integral Box Filters

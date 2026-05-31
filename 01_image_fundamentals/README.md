@@ -35,5 +35,5 @@ python src/main.py
 ### 2. Run the Automated Tests
 Verify correctness of BGR channel summation, scaling, and robust file writing:
 ```bash
-python -m pytest test/test.py
+python -m pytest test/test_fundamentals.py
 ```
