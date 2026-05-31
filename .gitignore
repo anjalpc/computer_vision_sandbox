@@ -15,6 +15,3 @@ __pycache__/
 
 # Local Output Directories
 01_image_fundamentals/results/
-
-# Paused modules
-02_array_vectorization/
