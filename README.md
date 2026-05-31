@@ -36,25 +36,10 @@ computer-vision-sandbox/
 
 ---
 
-## ✨ Features & Implementations
-
-### 1. Robust File I/O & Visualization
-- Dynamic, side-by-side rendering of multiple images using OpenCV `imshow` and stalled window termination.
-- Auto-directory creation during file writing to ensure robust batch-saving workflows without manual folder setup.
-
-### 2. Precise Downscaling
-- Half-size image scaling utilizing nearest-neighbor interpolation (`cv2.INTER_NEAREST_EXACT` on `cv2.resize`) for exact pixel preservation.
-
-### 3. Channel Separation (Zero-Loop Vectorization)
-- Separates BGR color images into three individual red, green, and blue visualization planes.
-- Achieved using pure **NumPy slicing and multidimensional indexing** rather than slow nested loops, ensuring $\mathcal{O}(1)$ Python overhead:
-```python
-# Extract the blue channel in BGR color space
-blue_plane = np.zeros_like(colored_image)
-blue_plane[:, :, 0] = colored_image[:, :, 0]
-```
-
----
+## ✨ Key Features of the Sandbox
+- **Test-Driven Development (TDD)**: Every algorithm in the repository is fully verified with robust automated tests (`pytest`) for edge cases and mathematical equivalence.
+- **Performance Profiling**: Direct scripts showcasing execution speed gains when transitioning from naive Python loops to vectorized slicing and $O(n^2)$ integral image algorithms.
+- **Clean Architecture**: Exercises are completely modularized. Each project folder contains its own source code, automated test suite, and dedicated markdown README explaining the core computer vision math.
 
 ## 🚀 Getting Started
 
