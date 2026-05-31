@@ -25,8 +25,7 @@ computer-vision-sandbox/
 │       └── test.py             # Unit tests verifying implementations
 ├── 02_array_vectorization/      # High-Performance Array Filtering
 │   ├── src/
-│   │   ├── filters.py          # Naive, Vectorized, and Integral Box Filters
-│   │   └── SmallVectorizationTutorial.ipynb
+│   │   └── filters.py          # Naive, Vectorized, and Integral Box Filters
 │   ├── test/
 │   │   └── test_filters.py     # Unit tests verifying filter equivalence
 │   └── README.md               # Exercise 2 Documentation & Takeaways
@@ -69,19 +68,6 @@ pip install opencv-python numpy pytest
 
 ---
 
-## 💻 Running the Projects
-
-### Running the Image Processing Pipeline
-To execute the primary image processing demonstration which scales down an image, splits the BGR color channels, and saves the outputs:
-
-```bash
-python 01_image_fundamentals/src/main.py
-```
-
-*Outputs will be saved in `01_image_fundamentals/results/`.*
-
----
-
 ## 🧪 Testing
 
 This project incorporates a robust suite of unit tests written in **Pytest** to ensure algorithmic correctness and mathematical consistency.
@@ -98,7 +84,7 @@ python -m pytest
 For detailed mathematical analysis, implementations, and core learnings of each module, check out their respective sub-READMEs:
 
 1. **[01_image_fundamentals](file:///e:/Projects/computer_vision_sandbox/01_image_fundamentals)**: Core OpenCV visualization, BGR channel splitting, and nearest-neighbor resizing.
-2. **[02_array_vectorization/README.md](file:///e:/Projects/computer_vision_sandbox/02_array_vectorization/README.md)**: Array slicing, performance profiling, and $\mathcal{O}(n^2)$ constant-time blurring via Integral Images.
+2. **[02_array_vectorization](file:///e:/Projects/computer_vision_sandbox/02_array_vectorization/README.md)**: Array slicing, performance profiling, and $\mathcal{O}(n^2)$ constant-time blurring via Integral Images.
 
 ---
 

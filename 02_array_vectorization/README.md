@@ -42,24 +42,6 @@ This folder explores three distinct stages of algorithmic optimization: from slo
 
 ---
 
-## 🕵️ Bug Discovery & Correction
-While verifying the notebook tutorial implementations on non-square images, we discovered a coordinate-swapping bug in the original integral image code:
-```python
-# Swapped coordinate bug in the notebook:
-width, height = integral_image.shape
-top_left = integral_image[0:height-box_height, 0:width-box_width]
-```
-Because the tutorial's test image was a perfect square ($256 \times 256$), this bug went unnoticed. However, it crashes on non-square aspect ratios. 
-
-We successfully corrected this to respect rows and columns:
-```python
-h, w = integral_image.shape
-top_left = integral_image[0 : h - box_height, 0 : w - box_width]
-```
-Our implementations are fully robust and compatible with any rectangular image.
-
----
-
 ## 🚀 Getting Started & Running the Code
 
 ### 1. Run the Visual Comparison Demo
