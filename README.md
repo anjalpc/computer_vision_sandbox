@@ -23,8 +23,15 @@ computer-vision-sandbox/
 │   │   └── functions.py        # Core image manipulation algorithms
 │   └── test/
 │       └── test.py             # Unit tests verifying implementations
+├── 02_array_vectorization/      # High-Performance Array Filtering
+│   ├── src/
+│   │   ├── filters.py          # Naive, Vectorized, and Integral Box Filters
+│   │   └── SmallVectorizationTutorial.ipynb
+│   ├── test/
+│   │   └── test_filters.py     # Unit tests verifying filter equivalence
+│   └── README.md               # Exercise 2 Documentation & Takeaways
 ├── .gitignore                  # Git exclusion rules
-└── README.md                   # Repository documentation (this file)
+└── README.md                   # Repository landing page (this file)
 ```
 
 ---
@@ -92,17 +99,24 @@ python 01_image_fundamentals/src/main.py
 
 ## 🧪 Testing
 
-This project incorporates a robust suite of unit tests written in **Pytest** to ensure algorithmic correctness and mathematical consistency (e.g. validating that reconstituted channels sum perfectly back to the original image).
+This project incorporates a robust suite of unit tests written in **Pytest** to ensure algorithmic correctness and mathematical consistency.
 
-Run the tests inside your active virtual environment:
-
+Run all tests in the workspace:
 ```bash
-pytest 01_image_fundamentals/test/test.py
+python -m pytest
 ```
 
 ---
 
+## 🗺️ Modules & Takeaways
+
+For detailed mathematical analysis, implementations, and core learnings of each module, check out their respective sub-READMEs:
+
+1. **[01_image_fundamentals](file:///e:/Projects/computer_vision_sandbox/01_image_fundamentals)**: Core OpenCV visualization, BGR channel splitting, and nearest-neighbor resizing.
+2. **[02_array_vectorization/README.md](file:///e:/Projects/computer_vision_sandbox/02_array_vectorization/README.md)**: Array slicing, performance profiling, and $\mathcal{O}(n^2)$ constant-time blurring via Integral Images.
+
+---
+
 ## ⚡ Next Steps & Future Plans
-- **Vectorized Spatial Filtering**: Implementing Box Filters and Gaussian Blurs.
-- **Integral Image Optimizations**: Transitioning convolutions from $\mathcal{O}(f^2 \cdot n^2)$ to $\mathcal{O}(n^2)$ using cumulative row/column summing.
+- **Vectorized Spatial Filtering (Gaussian & Sharpening)**: Implement generalized spatial filters using NumPy stacking.
 - **Edge Detection**: Custom Sobel operators and Canny Edge detection implementations.

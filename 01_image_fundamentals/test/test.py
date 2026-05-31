@@ -1,8 +1,13 @@
 import pytest
 import numpy as np
+import os
 import sys
 import cv2
-sys.path.append(".")
+
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if parent_dir not in sys.path:
+    sys.path.append(parent_dir)
+
 from utils import save_images, scale_down, separate_channels
 import re
 
